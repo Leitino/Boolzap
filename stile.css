@@ -180,4 +180,20 @@ header{
   background-position: center;
   width: 68.2%;
   height: 94%;
+  position:relative;
+}
+.chat-input{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid black;
+  height: 45px;
+  display: flex;
+  background-color: #F5F1ED;
+  align-items: center;
+  justify-content: space-around;
+}
+#chat-messagge{
+  border-radius: 5px;
+  width: 550px;
 }
