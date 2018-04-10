@@ -99,11 +99,11 @@ header{
   height: 94%;
   display: flex;
   flex-direction: column;
-  border: 3px solid #9CE0FE;
 }
 .Friends-menu p{
   color:grey;
   font-size: 0.8em;
+  transition: 1s;
 }
 .new-message{
   width: 100%;
@@ -160,6 +160,9 @@ header{
   background-color: #0C9587;
   color:white;
 }
+.users:hover p{
+  color :black;
+}
 .users_icon{
   width: 20%;
   height: 100%;
@@ -177,6 +180,7 @@ header{
 .chat-sfondo{
   float: left;
   background-image: url(https://i.pinimg.com/originals/ed/24/d3/ed24d37dfad63bbd8fae98435696d303.jpg);
+  background-attachment: fixed;
   background-position: center;
   width: 68.2%;
   height: 94%;
@@ -184,6 +188,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  z-index: 0;
 }
 .chat-input{
   position: absolute;
@@ -194,6 +199,7 @@ header{
   background-color: #F5F1ED;
   align-items: center;
   justify-content: space-around;
+  z-index: 10;
 }
 #chat-messagge{
   border-radius: 5px;
@@ -206,7 +212,7 @@ header{
 .ricevuto{
   position:relative;
   float: left;
-  width: 250px;
+  min-width: 250px;
   height: 50px;
   background-color: black;
   border-radius: 5px;
@@ -227,7 +233,7 @@ header{
 }
 .inviato{
   position: relative;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   background-color:#c4e8a7;
   border-radius: 5px;
