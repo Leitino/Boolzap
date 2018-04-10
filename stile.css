@@ -189,7 +189,6 @@ header{
   position: absolute;
   bottom: 0;
   width: 100%;
-  border: 1px solid black;
   height: 45px;
   display: flex;
   background-color: #F5F1ED;
@@ -207,7 +206,7 @@ header{
 .ricevuto{
   position:relative;
   float: left;
-  width: 300px;
+  width: 250px;
   height: 50px;
   background-color: black;
   border-radius: 5px;
@@ -227,6 +226,7 @@ header{
   background-color: white;
 }
 .inviato{
+  position: relative;
   width: 200px;
   height: 50px;
   background-color:#c4e8a7;
@@ -235,4 +235,20 @@ header{
   display:flex;
   align-items: center;
   justify-content: flex-end;
+}
+.orario{
+  padding-top: 2px;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+  font-size: 0.65em;
+  display: flex;
+  align-items: center;
+  color: grey;
+}
+.orario .fa{
+  font-size: 1em;
+  color:blue;
 }
