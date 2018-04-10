@@ -1,9 +1,8 @@
 $(function() {
 
-
-  $(document).keypress(function(e) {
+  $('#chat-messagge').keypress(function(e) {
       if(e.which == 13) {
-          alert('You pressed enter!');
+          $('.chat-sfondo').append('ciao')
       }
   });
 });
