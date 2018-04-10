@@ -94,10 +94,16 @@ header{
   color:grey;
 }
 .Friends-menu{
+  float: left;
   width: 31.8%;
   height: 94%;
   display: flex;
   flex-direction: column;
+  border: 3px solid #9CE0FE;
+}
+.Friends-menu p{
+  color:grey;
+  font-size: 0.8em;
 }
 .new-message{
   width: 100%;
@@ -143,7 +149,7 @@ header{
 .users{
   cursor: pointer;
   width: 100%;
-  height: 50px;
+  height: 55px;
   border-bottom: 1px solid lightgray;
   background-color: white;
   display: flex;
@@ -167,4 +173,11 @@ header{
   border-radius: 50%;
   background-color: grey;
   margin-left: 10px;
+}
+.chat-sfondo{
+  float: left;
+  background-image: url(https://i.pinimg.com/originals/ed/24/d3/ed24d37dfad63bbd8fae98435696d303.jpg);
+  background-position: center;
+  width: 68.2%;
+  height: 94%;
 }
