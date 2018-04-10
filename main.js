@@ -1,8 +1,10 @@
 $(function() {
 
-  $('#chat-messagge').keypress(function(e) {
+  $('#chat-messagge').keypress(function(e){
+      var messaggio = $('#chat-messagge').val()
+      $('#chat-message').val("")
       if(e.which == 13) {
-          $('.chat-sfondo').append('ciao')
+          $('.chat-sfondo').append('<div class="inviato">'+messaggio+'</div>')
       }
   });
 });
