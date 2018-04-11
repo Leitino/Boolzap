@@ -183,7 +183,7 @@ header{
   background-attachment: fixed;
   background-position: center;
   width: 68.2%;
-  height: 94%;
+  min-height: 94%;
   position:relative;
   display: flex;
   flex-direction: column;

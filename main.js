@@ -7,4 +7,13 @@ $(function() {
           $('.chat-sfondo').append('<div class="inviato">'+messaggio+'</div>')
       }
   });
+  //realizzo metodo di ricerca//
+  $('#filter').keypress(function(e){
+    if (e.which == 13) {
+      $('.users')
+
+
+    }
+
+  })
 });
