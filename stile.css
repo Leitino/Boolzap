@@ -181,15 +181,14 @@ header{
 .chat-sfondo{
   float: left;
   background-image: url(https://i.pinimg.com/originals/ed/24/d3/ed24d37dfad63bbd8fae98435696d303.jpg);
-  background-attachment: fixed;
   background-position: center;
   width: 68.2%;
-  min-height: 94%;
+  height: 94%;
   position:relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  z-index: 0;
+  overflow-y: scroll;
 }
 .chat-input{
   position: absolute;
@@ -211,6 +210,7 @@ header{
   font-size:1.5em;
 }
 .ricevuto{
+  padding-left: 10px;
   position:relative;
   float: left;
   min-width: 250px;
@@ -225,14 +225,15 @@ header{
 }
 .square{
   transform: rotate(5deg);
-  width: 20px;
-  height:20px;
+  width: 13px;
+  height:13px;
   position: absolute;
   top:-5px;
   left: -5px;
   background-color: white;
 }
 .inviato{
+  padding: 0 10px 10px;
   position: relative;
   min-width: 200px;
   height: 45px;
