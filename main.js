@@ -10,4 +10,12 @@ $(function() {
           },1000);
       }
   });
+  $('#filter').keypress(function(e) {
+    var messaggio = $('#filter').val()
+    if (e.which == 13) {
+      if ($('.users')(':contains(messaggio)')) {
+        $('.users').show()
+      }
+    }
+  })
 });
