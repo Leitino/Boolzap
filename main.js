@@ -5,15 +5,10 @@ $(function() {
       $('#chat-message').val("")
       if(e.which == 13) {
           $('.chat-sfondo').append('<div class="inviato">'+messaggio+'</div>')
+          setTimeout(function() {
+            $('.chat-sfondo').append('<div class="ricevuto">'+ 'ciao' + '</div>')
+
+          },1000);
       }
   });
-  //realizzo metodo di ricerca//
-  $('#filter').keypress(function(e){
-    if (e.which == 13) {
-      $('.users')
-
-
-    }
-
-  })
 });
